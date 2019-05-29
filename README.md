@@ -15,7 +15,7 @@ If you want to test,
 
 Open a terminal and send a message using the below command 
 
-$ echo "Test" > /dev/pts/5
+	$ echo "Test" > /dev/pts/5
 
 then run the code.
 
@@ -23,7 +23,7 @@ then run the code.
 
 Open a terminal and send a message using the below command 
 
-$ cat < /dev/pts/5
+	$ cat < /dev/pts/5
 
 Author: Pradheep Krishna
 
