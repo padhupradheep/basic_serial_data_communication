@@ -6,13 +6,17 @@
 #include <string.h>
 int main() 
 {
-int serial_port = open("/dev/pts/4", O_RDWR);
-std::cout<<"The serial port is:"<<serial_port<<std::endl;
-char read_buf [256];
-memset(&read_buf, '\0', sizeof(read_buf));
-int num_bytes = read(serial_port, &read_buf, sizeof(read_buf));
-std::cout<<num_bytes<<std::endl;
-std::cout<<read_buf<<std::endl;
+
+//Opening and reading from the serial port!  
+	int serial_port = open("/dev/pts/4", O_RDWR);
+	std::cout<<"The serial port is:"<<serial_port<<std::endl;
+	char read_buf [256];
+	memset(&read_buf, '\0', sizeof(read_buf));
+	// int num_bytes = read(serial_port, &read_buf, sizeof(read_buf));
+	// std::cout<<num_bytes<<std::endl;
+
+//Opening and writing to the serial port:
+	int n = write(serial_port, "I have opened the port and wrote a data", 30);
 
 }
 // Reference: https://blog.mbedded.ninja/programming/operating-systems/linux/linux-serial-ports-using-c-cpp/#overview
