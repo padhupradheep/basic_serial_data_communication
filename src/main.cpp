@@ -1,6 +1,5 @@
 #include <iostream>
 #include <fcntl.h> // Contains file controls like O_RDWR
-#include <errno.h> // Error integer and strerror() function
 #include <termios.h> // Contains POSIX terminal control definitions
 #include <unistd.h> // write(), read(), close()using namespace std;
 #include <string.h>
@@ -37,7 +36,7 @@ int main()
     high_resolution_clock::time_point t1 = high_resolution_clock::now();
     function();
     high_resolution_clock::time_point t2 = high_resolution_clock::now();
- 	auto duration = duration_cast<microseconds>( t2 - t1 ).count();
-    cout << duration<<endl;
+ 	int duration = duration_cast<microseconds>( t2 - t1 ).count();
+    cout <<"Processing time in microseconds"<<duration<<endl;
 }
 // Reference: https://blog.mbedded.ninja/programming/operating-systems/linux/linux-serial-ports-using-c-cpp/#overview

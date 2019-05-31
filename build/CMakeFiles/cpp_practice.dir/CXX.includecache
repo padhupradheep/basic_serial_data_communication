@@ -11,8 +11,6 @@ iostream
 -
 fcntl.h
 -
-errno.h
--
 termios.h
 -
 unistd.h
