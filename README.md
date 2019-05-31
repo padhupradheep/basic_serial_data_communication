@@ -30,3 +30,21 @@ Author: Pradheep Krishna
 For more reference:
 1. Stack overflow-Virtual-serial-port-for-linux(https://stackoverflow.com/questions/52187/virtual-serial-port-for-linux)
 2. Termios wikibooks
+
+Other important basic informations:
+
+Bitwise operator:
+
+AND, OR, NOT, XOR performs the logical operations of the denoted function. 
+
+|  Symbol | Operator       |
+|---------|--------------  |
+|    &    |  bitwise AND   |
+|    |    | bitwise inc OR |
+|    <<   |  left shift    |
+|    >>   |  right shift   |
+|    ~    |  bitwise NOT   |
+
+
+
+
