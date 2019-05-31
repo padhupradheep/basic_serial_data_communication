@@ -1,6 +1,6 @@
 # basic_serial_data_communication
 
-Repository for cpp communication using virtual serial port. 
+# Repository for cpp communication using virtual serial port. 
 
 Uses socat
 
@@ -25,7 +25,10 @@ Open a terminal and send a message using the below command
 
 	$ cat < /dev/pts/5
 
-Author: Pradheep Krishna
+This repository works based on the CMake:
+For more information on that please check: CMake_Tutorial(https://cmake.org/cmake-tutorial/)
+
+
 
 For more reference:
 1. Stack overflow-Virtual-serial-port-for-linux(https://stackoverflow.com/questions/52187/virtual-serial-port-for-linux)
@@ -46,5 +49,6 @@ AND, OR, NOT, XOR performs the logical operations of the denoted function.
 |    ~    |  bitwise NOT   |
 
 
+Author: Pradheep Krishna
 
 
