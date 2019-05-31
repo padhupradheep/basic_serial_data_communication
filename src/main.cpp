@@ -4,10 +4,12 @@
 #include <termios.h> // Contains POSIX terminal control definitions
 #include <unistd.h> // write(), read(), close()using namespace std;
 #include <string.h>
+#include <chrono>
 using namespace std;
-int main() 
-{
+using namespace std::chrono;
 
+void function()
+{
 //Opening and reading from the serial port!  
 	int serial_port = open("/dev/pts/4", O_RDWR);
 
@@ -28,5 +30,14 @@ int main()
 	int k = i>>2;
 	cout<<"The value generated for leftshift operator:"<<j<<endl;
 	cout<<"The value generated for rightshift operator:"<<k<<endl;
+}
+
+int main() 
+{
+    high_resolution_clock::time_point t1 = high_resolution_clock::now();
+    function();
+    high_resolution_clock::time_point t2 = high_resolution_clock::now();
+ 	auto duration = duration_cast<microseconds>( t2 - t1 ).count();
+    cout << duration<<endl;
 }
 // Reference: https://blog.mbedded.ninja/programming/operating-systems/linux/linux-serial-ports-using-c-cpp/#overview
