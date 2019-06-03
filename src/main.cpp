@@ -29,6 +29,15 @@ void function()
 	int k = i>>2;
 	cout<<"The value generated for leftshift operator:"<<j<<endl;
 	cout<<"The value generated for rightshift operator:"<<k<<endl;
+
+// Logical and operation. Here you can note that the hexadecimal value was converted to decimal value while printing
+
+	int a = 0x80;
+	int b = 0x80;
+	uint16_t c= a&b;
+	cout<<"Logical and operation:"<<c<<endl ;
+
+	
 }
 
 int main() 
