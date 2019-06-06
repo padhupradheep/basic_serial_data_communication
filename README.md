@@ -2,6 +2,9 @@
 
 # Repository for cpp communication using virtual serial port. 
 
+For listing the serial port 
+ls <tab> /de
+
 Uses socat
 
 First check for the pseudo ports:
